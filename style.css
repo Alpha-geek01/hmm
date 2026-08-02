@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #111827);
+    color: #22c55e;
+    font-family: Consolas, Monaco, monospace;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.container {
+    padding: 30px;
+}
+
+#text {
+    font-size: 2rem;
+    line-height: 1.8;
+    word-break: break-word;
+    text-shadow:
+        0 0 8px rgba(34, 197, 94, 0.8),
+        0 0 20px rgba(34, 197, 94, 0.5);
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        opacity: 0.75;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #22c55e;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #16a34a;
+}
